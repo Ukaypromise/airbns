@@ -6,7 +6,6 @@ ruby "3.1.2"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4"
 # New Gem files for Project.
-gem 'tailwindcss-rails', '~> 2.0', '>= 2.0.21'
 gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'gravatar_image_tag', '~> 1.2'
 gem 'carrierwave', '~> 2.2', '>= 2.2.3'
