@@ -5,6 +5,12 @@ ruby "3.1.2"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4"
+# New Gem files for Project.
+gem 'tailwindcss-rails', '~> 2.0', '>= 2.0.21'
+gem 'devise', '~> 4.8', '>= 4.8.1'
+gem 'gravatar_image_tag', '~> 1.2'
+gem 'carrierwave', '~> 2.2', '>= 2.2.3'
+gem 'mini_magick', '~> 4.12'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -51,6 +57,9 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem 'guard', '~> 2.18'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'better_errors', '~> 2.9', '>= 2.9.1'
 end
 
 group :development do
