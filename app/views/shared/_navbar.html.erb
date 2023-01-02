@@ -26,8 +26,8 @@
                         </button>
                         <%= link_to "Log Out", destroy_user_session_path, method: :delete, class:"btn btn-primary mx-3"%>
                         <% else %>
-                        <a class="btn btn-primary mx-3" href="#signup">Sign Up</a>
-                        <a class="btn btn-primary" href="#signup">Login</a>
+                        <%= link_to "SignUp", new_user_registration_path, class:"btn btn-primary mx-3" %>
+                        <%= link_to "Login", new_user_session_path, class:"btn btn-primary" %>
                     </div>
                     <% end %>
                 </div>
