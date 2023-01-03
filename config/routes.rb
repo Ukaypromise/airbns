@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :products
   devise_for :users
   resources :home
   
@@ -6,7 +7,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  root 'home#index'
+  root 'product#index'
   devise_scope :user do 
     get '/users/sign_out' => 'devise/sessions#destroy' 
   end
