@@ -28,13 +28,15 @@
   </div>
 
   <div>
+    <span class="select">
     <%= form.label :condition, style: "display: block" %>
-    <%= form.text_field :condition  %>
+    <%= form.select :condition, Product::CONDITION%>
+    </span>
   </div>
 
   <div>
     <%= form.label :category, style: "display: block" %>
-    <%= form.text_field :category %>
+    <%= form.select :category, Product::CATEGORY %>
   </div>
 
   <div>
