@@ -1,5 +1,5 @@
 class Product < ApplicationRecord
-    # mount_uploader :image, ImageUploader
+
     belongs_to :user, optional: true
     has_one_attached :image
 
