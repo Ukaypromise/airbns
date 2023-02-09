@@ -1,4 +1,5 @@
 <div id="<%= dom_id product %>">
+
   <p>
     <strong>Brand:</strong>
     <%= product.brand %>
@@ -34,4 +35,7 @@
     <%= product.price %>
   </p>
 
+  <% if @product.image.attached? %>
+    <%= image_tag @product.image %>
+  <%end%>
 </div>
