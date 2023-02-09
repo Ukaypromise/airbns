@@ -7,9 +7,9 @@ ruby "3.1.2"
 gem "rails", "~> 7.0.4"
 # New Gem files for Project.
 gem 'devise', '~> 4.8', '>= 4.8.1'
-gem 'gravatar_image_tag', '~> 1.2'
-gem 'carrierwave', '~> 2.2', '>= 2.2.3'
-gem 'mini_magick', '~> 4.12'
+# gem 'gravatar_image_tag', '~> 1.2'
+# gem 'carrierwave', '~> 2.2', '>= 2.2.3'
+# gem 'mini_magick', '~> 4.12'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
