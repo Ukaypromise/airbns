@@ -14,7 +14,7 @@
     <% Product.all.each do |product| %>
       <div class="col px-4" id="<%= dom_id product %>">
         <div class="card h-100">
-          <%= image_tag product.image, class: "card-img-top" %>
+          <%# <%= image_tag product.image, class: "card-img-top" %>
           <div class="card-body">
           <h5 class="card-title"><%= product.brand %></h5>
             <h5 class="card-title"><%= product.name %></h5>
