@@ -14,7 +14,11 @@
     <% Product.all.each do |product| %>
       <div class="col px-4" id="<%= dom_id product %>">
         <div class="card h-100">
-          <%# <%= image_tag product.image, class: "card-img-top" %>
+          <% if product.image.present? %>
+            <%= image_tag product.image, class: "card-img-top" %>
+          <% else %>
+            <%= image_tag "https://plus.unsplash.com/premium_photo-1684783848349-fe1d51ab831b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80", class: "card-img-top" %>
+          <% end %>
           <div class="card-body">
           <h5 class="card-title"><%= product.brand %></h5>
             <h5 class="card-title"><%= product.name %></h5>
